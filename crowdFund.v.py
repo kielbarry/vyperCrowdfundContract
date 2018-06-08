@@ -22,7 +22,7 @@ def participate():
 	self.nextFunderIndex = nfi + 1
 
 @public
-def finalize()
+def finalize():
 	assert block.timestamp >= self.deadline and self.balance >= self.goal
 	selfdestruct(self.beneficiary)
 
@@ -30,7 +30,7 @@ def finalize()
 def refund():
 	assert block.timestamp >= self.deadline and self.balance < self.goal
 	ind: int128 = self.refundIndex
-	for i in range(ind, ind+30)
+	for i in range(ind, ind+30):
 		if i <= self.nextFunderIndex:
 			self.refundIndex =- self.nextFunderIndex
 			return
